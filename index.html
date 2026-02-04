@@ -45,7 +45,6 @@
 
 <body class="text-white">
 
-    <!-- <section class="relative h-screen bg-cover bg-center" style="background-image: url('/background.svg');"> -->
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('./images/green.webp');">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
@@ -58,21 +57,22 @@
                 <a href="#contact"
                     class="bg-white text-black px-4 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white">Contact</a>
             </nav>
-            <!-- Mobile menu button -->
             <button id="mobile-menu-btn" class="md:hidden text-white p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-95 z-20 pt-mono">
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-95 z-20 pt-mono">
             <div class="flex flex-col p-4 space-y-4">
                 <a href="#" class="hover:underline py-2">Home</a>
                 <a href="#products" class="hover:underline py-2">Software</a>
                 <a href="#products" class="hover:underline py-2">Docs</a>
-                <a href="#contact" class="bg-white text-black px-4 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white text-center">Contact</a>
+                <a href="#contact"
+                    class="bg-white text-black px-4 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white text-center">Contact</a>
             </div>
         </div>
 
@@ -112,12 +112,16 @@
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-6xl mx-auto">
             <div class="order-1 md:order-1 md:w-1/2">
                 <h4 class="text-xl md:text-2xl font-bold mb-4">
-                     CSCAN is a developer-friendly API for real-time or batch content screening
+                    CSCAN is a developer-friendly API for real-time or batch content screening
                 </h4>
                 <p class="text-gray-400 text-sm md:text-base">
-                    CSCAN is an offline-first, AI-powered scanning system built to detect and flag suspected CSAM in both images and videos - before it reaches your users, your infrastructure, or your compliance boundary.
+                    CSCAN is an offline-first, AI-powered scanning system built to detect and flag suspected CSAM in
+                    both images and videos - before it reaches your users, your infrastructure, or your compliance
+                    boundary.
 
-Designed for easy integration into any upload or ingestion pipeline, CSCAN supports transactional or batch processing, leverages parallel execution for speed, and provides reliable, resumable analysis at scale - all with minimal latency and zero cloud dependencies.
+                    Designed for easy integration into any upload or ingestion pipeline, CSCAN supports transactional or
+                    batch processing, leverages parallel execution for speed, and provides reliable, resumable analysis
+                    at scale - all with minimal latency and zero cloud dependencies.
                     <br /><br />
                     <a href="#contact"
                         class="inline-block bg-white text-black px-4 py-3 md:py-4 rounded-lg font-semibold hover:bg-gray-600 hover:text-white pt-mono text-sm md:text-base">Learn
@@ -137,7 +141,9 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     </div>
                     <div class="p-3 md:p-4 text-xs md:text-sm leading-relaxed overflow-x-auto">
                         <div class="whitespace-nowrap">
-                            <span class="text-green-400">$</span> curl -F "file=@/image.jpg" <span class="hidden sm:inline">https://cscan.artemiswatch.org/</span><span class="sm:hidden">...</span>
+                            <span class="text-green-400">$</span> curl -F "file=@/image.jpg" <span
+                                class="hidden sm:inline">https://cscan.artemiswatch.org/</span><span
+                                class="sm:hidden">...</span>
                         </div>
                         <pre class="text-white text-xs md:text-sm whitespace-pre-wrap break-words">
 {
@@ -162,18 +168,20 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
             </div>
         </div>
 
-        <!-- Deep Crawl Section - Terminal and Text Row -->
         <div class="flex flex-col lg:flex-row items-stretch gap-6 md:gap-8 max-w-7xl mx-auto">
-            <!-- Terminal (left on desktop, second on mobile) -->
             <div class="lg:w-1/2 w-full order-2 lg:order-1">
-                <div class="bg-gray-900 text-gray-100 font-mono rounded-lg shadow-lg w-full h-full border border-gray-700 overflow-hidden flex flex-col">
-                    <div class="flex items-center justify-start space-x-2 bg-gray-800 px-3 md:px-4 py-2 text-gray-400 border-b border-gray-700">
+                <div
+                    class="bg-gray-900 text-gray-100 font-mono rounded-lg shadow-lg w-full h-full border border-gray-700 overflow-hidden flex flex-col">
+                    <div
+                        class="flex items-center justify-start space-x-2 bg-gray-800 px-3 md:px-4 py-2 text-gray-400 border-b border-gray-700">
                         <div class="w-2 h-2 md:w-3 md:h-3 bg-red-500 rounded-full"></div>
                         <div class="w-2 h-2 md:w-3 md:h-3 bg-yellow-400 rounded-full"></div>
                         <div class="w-2 h-2 md:w-3 md:h-3 bg-green-500 rounded-full"></div>
-                        <span class="ml-2 md:ml-4 text-xs md:text-sm text-gray-300 truncate">~/terminal - deep-crawl</span>
+                        <span class="ml-2 md:ml-4 text-xs md:text-sm text-gray-300 truncate">~/terminal -
+                            deep-crawl</span>
                     </div>
-                    <div id="deep-crawl-terminal" class="p-3 md:p-4 text-xs md:text-sm leading-relaxed overflow-y-auto" style="height: 320px; min-height: 320px; max-height: 320px;">
+                    <div id="deep-crawl-terminal" class="p-3 md:p-4 text-xs md:text-sm leading-relaxed overflow-y-auto"
+                        style="height: 320px; min-height: 320px; max-height: 320px;">
                         <div class="text-green-400">$ deep-crawl --monitor</div>
                         <div class="text-gray-400">[*] Starting CT log monitor...</div>
                         <div class="text-gray-400">[*] Connected to lets_encrypt_2026h1</div>
@@ -182,15 +190,17 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     </div>
                 </div>
             </div>
-            
-            <!-- Text Description (right on desktop, first on mobile) -->
+
             <div class="lg:w-1/2 w-full flex items-center order-1 lg:order-2">
                 <div>
                     <h4 class="text-xl md:text-2xl font-bold mb-4">
                         Lorem Ipsum Dolor Sit Amet Consectetur
                     </h4>
                     <p class="text-gray-400 text-sm md:text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br /><br />
                         <a href="#contact"
                             class="inline-block bg-white text-black px-4 py-3 md:py-4 rounded-lg font-semibold hover:bg-gray-600 hover:text-white pt-mono text-sm md:text-base">Learn
@@ -200,18 +210,21 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
             </div>
         </div>
 
-        <!-- Second Row: Deep Crawl Description and Table -->
         <div class="flex flex-col lg:flex-row items-stretch gap-6 md:gap-8 max-w-7xl mx-auto">
-            <!-- Left: Deep Crawl Description -->
             <div class="lg:w-1/2 w-full flex items-center">
                 <div>
                     <h4 class="text-xl md:text-2xl font-bold mb-4">
                         Deep Crawl: Intelligent Metadata and Keyword Scanning Across the Clearnet and Darknet
                     </h4>
                     <p class="text-gray-400 text-sm md:text-base">
-                        Deep Crawl continuously scans the clearnet and thousands of TOR domains to detect high-risk, exploitative content using advanced keyword analysis, metadata extraction, and DNS pattern recognition.
-                        Our system identifies emerging threats by analyzing historical domain behavior, registrar data, and hosting patterns. Combined with our proprietary neural network, Deep Crawl flags domains likely involved in CSAM distribution - even before they're fully indexed.
-                        Export flagged domains as blocklists or integrate them directly into your content filtering infrastructure to proactively shield your platform from harmful content.
+                        Deep Crawl continuously scans the clearnet and thousands of TOR domains to detect high-risk,
+                        exploitative content using advanced keyword analysis, metadata extraction, and DNS pattern
+                        recognition.
+                        Our system identifies emerging threats by analyzing historical domain behavior, registrar data,
+                        and hosting patterns. Combined with our proprietary neural network, Deep Crawl flags domains
+                        likely involved in CSAM distribution - even before they're fully indexed.
+                        Export flagged domains as blocklists or integrate them directly into your content filtering
+                        infrastructure to proactively shield your platform from harmful content.
                         <br /><br />
                         <a href="#contact"
                             class="inline-block bg-white text-black px-4 py-3 md:py-4 rounded-lg font-semibold hover:bg-gray-600 hover:text-white pt-mono text-sm md:text-base">Learn
@@ -220,16 +233,18 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                 </div>
             </div>
 
-            <!-- Right: Flagged Domains Table (Static) -->
             <div class="lg:w-1/2 w-full">
-                <div class="bg-gray-900 text-gray-100 font-sans rounded-lg shadow-lg w-full h-full border border-gray-700 overflow-hidden flex flex-col">
-                    <div class="flex items-center justify-between bg-gray-800 px-3 md:px-4 py-2 border-b border-gray-700">
+                <div
+                    class="bg-gray-900 text-gray-100 font-sans rounded-lg shadow-lg w-full h-full border border-gray-700 overflow-hidden flex flex-col">
+                    <div
+                        class="flex items-center justify-between bg-gray-800 px-3 md:px-4 py-2 border-b border-gray-700">
                         <div class="flex items-center space-x-2">
                             <div class="w-2 h-2 md:w-3 md:h-3 bg-red-500 rounded-full"></div>
                             <div class="w-2 h-2 md:w-3 md:h-3 bg-yellow-400 rounded-full"></div>
                             <div class="w-2 h-2 md:w-3 md:h-3 bg-green-500 rounded-full"></div>
                         </div>
-                        <div class="flex-1 mx-2 md:mx-4 bg-gray-700 text-xs md:text-sm px-2 md:px-3 py-1 rounded text-gray-300 truncate">
+                        <div
+                            class="flex-1 mx-2 md:mx-4 bg-gray-700 text-xs md:text-sm px-2 md:px-3 py-1 rounded text-gray-300 truncate">
                             dashboard.artemiswatch.org
                         </div>
                         <div class="text-gray-400 text-xs hidden sm:block">🔒 Secure</div>
@@ -238,14 +253,14 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     <div class="p-3 md:p-6 flex-1 overflow-hidden flex flex-col">
                         <h2 class="text-lg md:text-xl font-semibold text-purple-300 mb-3 md:mb-4">Flagged Domains</h2>
 
-                        <!-- Mobile card view -->
                         <div class="md:hidden space-y-3 overflow-y-auto flex-1">
                             <div class="bg-gray-800 rounded-lg p-3 border border-red-500 border-opacity-50">
                                 <div class="flex justify-between items-center mb-2">
                                     <span class="text-red-400 font-semibold text-sm">Harmful</span>
                                     <span class="text-yellow-300 text-sm">0.94</span>
                                 </div>
-                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span class="text-blue-400 underline blur">http://gsdgmv.com</span></p>
+                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span
+                                        class="text-blue-400 underline blur">http://gsdgmv.com</span></p>
                                 <p class="text-gray-400 text-xs mt-2">5/12/25 10:34</p>
                             </div>
                             <div class="bg-gray-800 rounded-lg p-3 border border-green-500 border-opacity-50">
@@ -253,7 +268,8 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                                     <span class="text-green-400 font-semibold text-sm">Safe</span>
                                     <span class="text-yellow-300 text-sm">0.99</span>
                                 </div>
-                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span class="text-blue-400 underline blur">http://gd.sdgf.cc</span></p>
+                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span
+                                        class="text-blue-400 underline blur">http://gd.sdgf.cc</span></p>
                                 <p class="text-gray-400 text-xs mt-2">5/12/25 10:34</p>
                             </div>
                             <div class="bg-gray-800 rounded-lg p-3 border border-red-500 border-opacity-50">
@@ -261,12 +277,12 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                                     <span class="text-red-400 font-semibold text-sm">Harmful</span>
                                     <span class="text-yellow-300 text-sm">0.88</span>
                                 </div>
-                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span class="text-blue-400 underline blur">http://a-gdsfg.net</span></p>
+                                <p class="text-sm"><span class="text-gray-500">Website:</span> <span
+                                        class="text-blue-400 underline blur">http://a-gdsfg.net</span></p>
                                 <p class="text-gray-400 text-xs mt-2">5/12/25 10:35</p>
                             </div>
                         </div>
 
-                        <!-- Desktop table view -->
                         <div class="hidden md:block overflow-y-auto flex-1" style="max-height: 260px;">
                             <table class="min-w-full table-auto border border-gray-700 rounded-md overflow-hidden">
                                 <thead class="bg-gray-800 text-gray-300 text-sm uppercase tracking-wide sticky top-0">
@@ -298,7 +314,8 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                                         <td class="px-4 py-2 text-blue-400 underline blur">http://a-gdsfg.net</td>
                                         <td class="px-4 py-2 text-red-400 font-semibold">Harmful</td>
                                         <td class="px-4 py-2 text-yellow-300">0.88</td>
-                                        <td class="px-4 py-2 text-orange-300"><span class="blur">erivs mgd</span>, <span class="blur">oertiuj</span>, <span class="blur">yuewtbn</span></td>
+                                        <td class="px-4 py-2 text-orange-300"><span class="blur">erivs mgd</span>, <span
+                                                class="blur">oertiuj</span>, <span class="blur">yuewtbn</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -309,7 +326,7 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
         </div>
 
     </section>
-<!-- 
+    <!-- 
 
     <section id="products" class="py-24 bg-gray-900  text-center">
         <h3 class="text-3xl font-bold mb-16">Case Studies</h3>
@@ -331,12 +348,12 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
 
     <section id="contact" class="py-16 md:py-24 bg-gray-900 px-4 md:px-8">
         <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Get in Touch</h3>
-        <form class="max-w-2xl mx-auto space-y-4 md:space-y-6">
-            <input type="text" placeholder="Your Name"
+        <form action="https://fabform.io/f/GOnhwWP" method="POST" class="max-w-2xl mx-auto space-y-4 md:space-y-6">
+            <input type="text" name="name" placeholder="Your Name" required
                 class="w-full p-3 md:p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm md:text-base" />
-            <input type="email" placeholder="Your Email"
+            <input type="email" name="email" placeholder="Your Email" required
                 class="w-full p-3 md:p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm md:text-base" />
-            <textarea rows="5" placeholder="Your Message"
+            <textarea name="message" rows="5" placeholder="Your Message" required
                 class="w-full p-3 md:p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm md:text-base"></textarea>
             <button type="submit"
                 class="w-full md:w-auto bg-white hover:bg-gray-600 hover:text-white text-black px-6 py-3 rounded-lg pt-mono text-sm md:text-base">Send
@@ -349,62 +366,54 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when clicking a link
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Deep Crawl Terminal Simulation
-        (function() {
+        (function () {
             const terminal = document.getElementById('deep-crawl-terminal');
-            
-            // Track if user has manually scrolled away from bottom
+
             let userHasScrolled = false;
-            
-            // Detect user scroll - if they scroll away from bottom, pause auto-scroll
-            terminal.addEventListener('scroll', function() {
+
+            terminal.addEventListener('scroll', function () {
                 const isAtBottom = terminal.scrollHeight - terminal.scrollTop - terminal.clientHeight < 10;
                 userHasScrolled = !isAtBottom;
             });
-            
-            // Sample domains for variety
+
             const domainParts = ['workflow', 'secure', 'api', 'cdn', 'mail', 'www', 'shop', 'app', 'dev', 'portal', 'admin', 'data', 'cloud', 'web', 'static'];
             const domainNames = ['grandezza', 'azlnl0z6', 'jrlicos', 'sexviber', 'sddianfeng', 'haogejoin', 'postnord', 'pescarouge', 'c2aviral', 'nstudio', 'takefullcontrol', 'econoova', 'jivawater', 'uniquerecruitment', 'tpptvip', 'assisters', 'myfritz', 'remotewd', 'agenscia', 'tributoxpert', 'zhyu', 'cryptolink', 'fastpay', 'securebank', 'mediashare', 'datahost', 'fileserv', 'streambox', 'quickload', 'netflow'];
             const tlds = ['com', 'net', 'org', 'ru', 'cn', 'uk.com', 'io', 'cc', 'nl', 'in', 'xyz', 'online', 'site'];
-            
+
             const ctLogs = ['lets_encrypt_2026h1', 'google_argon2026h1', 'cloudflare_nimbus2026', 'digicert_log2026'];
-            
+
             let treeSizes = {
                 'lets_encrypt_2026h1': 598614696,
                 'google_argon2026h1': 1965569673,
                 'cloudflare_nimbus2026': 324891256,
                 'digicert_log2026': 891234567
             };
-            
-            // Counter for suspicious domain frequency
+
             let domainsSinceSuspicious = 0;
-            let nextSuspiciousThreshold = Math.floor(Math.random() * 3) + 2; // 2-4
-            
+            let nextSuspiciousThreshold = Math.floor(Math.random() * 3) + 2;
             function randomChoice(arr) {
                 return arr[Math.floor(Math.random() * arr.length)];
             }
-            
+
             function generateDomain() {
                 const hasPrefix = Math.random() > 0.5;
                 const hasWildcard = Math.random() > 0.7;
                 const name = randomChoice(domainNames);
                 const tld = randomChoice(tlds);
-                
+
                 if (hasWildcard) {
                     return `*.${name}.${tld}`;
                 } else if (hasPrefix) {
@@ -413,12 +422,11 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     return `${name}.${tld}`;
                 }
             }
-            
-            // Generate gibberish domain like the ones in the static table
+
             function generateGibberishDomain() {
                 const letters = 'abcdefghijklmnopqrstuvwxyz';
                 const gibberishTlds = ['com', 'net', 'cc', 'org', 'ru', 'io'];
-                
+
                 function randomString(minLen, maxLen) {
                     const len = Math.floor(Math.random() * (maxLen - minLen + 1)) + minLen;
                     let str = '';
@@ -427,21 +435,17 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     }
                     return str;
                 }
-                
+
                 const patterns = [
-                    // Simple: gsdgmv.com
                     () => `${randomString(4, 8)}.${randomChoice(gibberishTlds)}`,
-                    // With subdomain: gd.sdgf.cc
                     () => `${randomString(2, 3)}.${randomString(3, 5)}.${randomChoice(gibberishTlds)}`,
-                    // With hyphen: a-gdsfg.net
                     () => `${randomString(1, 2)}-${randomString(4, 6)}.${randomChoice(gibberishTlds)}`,
-                    // Numbers mixed: x2df4g.com
                     () => `${randomString(1, 2)}${Math.floor(Math.random() * 9) + 1}${randomString(3, 5)}.${randomChoice(gibberishTlds)}`
                 ];
-                
+
                 return randomChoice(patterns)();
             }
-            
+
             function addLogLine(text, className = 'text-gray-300', useHTML = false) {
                 const line = document.createElement('div');
                 line.className = className;
@@ -451,47 +455,39 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     line.textContent = text;
                 }
                 terminal.appendChild(line);
-                
-                // Only auto-scroll if user hasn't manually scrolled away
+
                 if (!userHasScrolled) {
                     terminal.scrollTop = terminal.scrollHeight;
                 }
-                
-                // Keep only last 100 lines
+
                 while (terminal.children.length > 100) {
-                    terminal.removeChild(terminal.children[5]); // Keep first 5 lines (startup)
+                    terminal.removeChild(terminal.children[5]);
                 }
             }
-            
+
             function simulateLogCycle() {
-                // Randomly choose what type of log to show
                 const logType = Math.random();
-                
+
                 if (logType < 0.6) {
-                    // New domain log (60% chance)
                     const domain = generateDomain();
                     addLogLine(`New domain: ${domain}`, 'text-cyan-400');
-                    
+
                     domainsSinceSuspicious++;
-                    
-                    // Check if this domain should be flagged as suspicious
+
                     if (domainsSinceSuspicious >= nextSuspiciousThreshold) {
-                        const score = Math.floor(Math.random() * 21) + 80; // 80-100
-                        const suspiciousDomain = generateGibberishDomain();
+                        const score = Math.floor(Math.random() * 21) + 80; const suspiciousDomain = generateGibberishDomain();
                         setTimeout(() => {
                             addLogLine(`[+] Suspicious domain <span class="blur">http://${suspiciousDomain}</span> added for analysis (${score})`, 'text-red-400 font-bold', true);
                         }, 200);
-                        
-                        // Reset counter and set new threshold
+
                         domainsSinceSuspicious = 0;
-                        nextSuspiciousThreshold = Math.floor(Math.random() * 3) + 2; // 2-4
+                        nextSuspiciousThreshold = Math.floor(Math.random() * 3) + 2;
                     }
                 } else {
-                    // CT log status update (40% chance)
                     const log = randomChoice(ctLogs);
                     const oldSize = treeSizes[log];
                     const hasNewEntries = Math.random() > 0.4;
-                    
+
                     if (hasNewEntries) {
                         const newEntries = Math.floor(Math.random() * 8000) + 1000;
                         treeSizes[log] = oldSize + newEntries;
@@ -507,13 +503,10 @@ Designed for easy integration into any upload or ingestion pipeline, CSCAN suppo
                     }
                 }
             }
-            
-            // Start simulation after a short delay
+
             setTimeout(() => {
-                // Run every second
                 setInterval(simulateLogCycle, 1000);
-                
-                // Also add some rapid-fire domains occasionally
+
                 setInterval(() => {
                     if (Math.random() > 0.7) {
                         for (let i = 0; i < Math.floor(Math.random() * 3) + 1; i++) {
