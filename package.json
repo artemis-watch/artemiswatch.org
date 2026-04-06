@@ -5,9 +5,11 @@
     "build:css": "tailwindcss -i src/input.css -o dist/style.css --minify",
     "build:copy": "node build.mjs",
     "build": "npm run build:css && npm run build:copy",
-    "dev": "tailwindcss -i src/input.css -o dist/style.css --watch"
+    "dev": "concurrently -k \"tailwindcss -i src/input.css -o dist/style.css --watch\" \"node build.mjs --watch\" \"browser-sync start --server dist --files 'dist/**/*' --no-open\""
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
     "tailwindcss": "^3"
   }
 }
