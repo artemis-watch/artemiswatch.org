@@ -1,0 +1,13 @@
+{
+  "name": "artemiswatch.org",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i src/input.css -o dist/style.css --minify",
+    "build:copy": "node build.mjs",
+    "build": "npm run build:css && npm run build:copy",
+    "dev": "tailwindcss -i src/input.css -o dist/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3"
+  }
+}
