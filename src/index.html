@@ -216,14 +216,11 @@
     </div>
 </section>
 
-<section class="bg-gray-950 py-8 px-6 border-b border-gray-800">
+<!-- <section class="bg-gray-950 py-8 px-6 border-b border-gray-800">
     <div class="max-w-5xl mx-auto flex flex-wrap justify-center items-center gap-2 md:gap-4">
-        <span class="pt-mono text-xs text-gray-200 uppercase tracking-widest mr-4">Trusted by</span>
-        <img src="./images/internet-archive.svg" alt="Internet Archive" class="h-7 md:h-9" />
-        <img src="./images/pimeyes.svg" alt="PimEyes" class="h-6 md:h-8" />
-        <img src="./images/ncmec.png" alt="NCMEC" class="h-7 md:h-9" />
+        <span class="pt-mono text-xs text-gray-200 uppercase tracking-widest mr-4">Read our <a href="#">latest research paper</a></span>
     </div>
-</section>
+</section> -->
 
 <div id="software"></div>
 
@@ -269,76 +266,6 @@
   ],
   <span class="text-gray-300">"processing_ms"</span>:  <span class="text-cyan-300">143</span>
 }</pre>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr class="section-rule" />
-
-<section id="sift" class="bg-black py-20 px-6 md:px-10">
-    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-start gap-12 lg:gap-16">
-
-        <div class="lg:w-5/12">
-            <p class="pt-mono text-xs text-yellow-400 uppercase tracking-widest mb-4">Real-time certificate transparency monitoring</p>
-            <h2 class="didot text-3xl md:text-4xl font-normal mb-5 leading-snug">Sift</h2>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                Sift monitors over 24 certificate transparency log providers in real-time, creating keyword-based alerts to surface abuse-related domains before they go live. Every SSL certificate issued leaves a public record - Sift watches all of them.
-            </p>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                An optional <span class="text-gray-200 pt-mono text-xs">DGA</span> module identifies algorithmically generated domains - a common evasion technique used by malicious actors. Created from the ground up using a proprietary neural network trained on millions of known DGA domains.
-            </p>
-            <a href="#contact" class="pt-mono text-sm border border-gray-600 text-gray-300 px-5 py-2.5 rounded-md hover:border-white hover:text-white transition">Learn More →</a>
-        </div>
-
-        <div class="lg:w-7/12 w-full">
-            <div class="win">
-                <div class="win-bar">
-                    <div class="dot dot-r"></div>
-                    <div class="dot dot-y"></div>
-                    <div class="dot dot-g"></div>
-                    <span class="win-bar-title">~/</span>
-                </div>
-                <div id="sift-terminal" class="term-body" style="height: 300px; overflow-y: auto;">
-                    <div class="text-green-400">$ sift --monitor --providers all</div>
-                    <div class="text-gray-300">[*] Starting certificate transparency monitor...</div>
-                    <div class="text-gray-300">[*] Connected to lets_encrypt_2026h1</div>
-                    <div class="text-gray-300">[*] Connected to google_argon2026h1</div>
-                    <div class="text-gray-300">[*] Connected to cloudflare_nimbus2026</div>
-                    <div class="text-gray-300">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr class="section-rule" />
-
-<section id="orion" class="bg-black py-20 px-6 md:px-10">
-    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
-
-        <div class="lg:w-5/12">
-            <p class="pt-mono text-xs text-cyan-400 uppercase tracking-widest mb-4">Multi-layer geolocation analysis</p>
-            <h2 class="didot text-3xl md:text-4xl font-normal mb-5 leading-snug">Orion</h2>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                Orion is an automated OSINT tool designed for investigators. Submit a photo or video and Orion extracts embedded metadata - GPS coordinates, device fingerprints, timestamps - and cross-references detected visual landmarks to pinpoint a location.
-            </p>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                Built to help child protection investigators identify where an image was taken and narrow down who may be in danger. All analysis runs locally with no data leaving your environment.
-            </p>
-            <a href="#contact" class="pt-mono text-sm border border-gray-600 text-gray-300 px-5 py-2.5 rounded-md hover:border-white hover:text-white transition">Learn More →</a>
-        </div>
-
-        <div class="lg:w-7/12 w-full">
-            <div class="win">
-                <div class="win-bar">
-                    <div class="dot dot-r"></div>
-                    <div class="dot dot-y"></div>
-                    <div class="dot dot-g"></div>
-                    <span class="win-bar-title">~/</span>
-                </div>
-                <div id="orion-terminal" class="term-body" style="height: 340px; overflow-y: auto;">
                 </div>
             </div>
         </div>
@@ -462,6 +389,76 @@
 
 <hr class="section-rule" />
 
+<section id="orion" class="bg-black py-20 px-6 md:px-10">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
+
+        <div class="lg:w-5/12">
+            <p class="pt-mono text-xs text-cyan-400 uppercase tracking-widest mb-4">Multi-layer geolocation analysis</p>
+            <h2 class="didot text-3xl md:text-4xl font-normal mb-5 leading-snug">Orion</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                Orion is an automated OSINT tool designed for investigators. Submit a photo or video and Orion extracts embedded metadata - GPS coordinates, device fingerprints, timestamps - and cross-references detected visual landmarks to pinpoint a location.
+            </p>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                Built to help child protection investigators identify where an image was taken and narrow down who may be in danger. All analysis runs locally with no data leaving your environment.
+            </p>
+            <a href="#contact" class="pt-mono text-sm border border-gray-600 text-gray-300 px-5 py-2.5 rounded-md hover:border-white hover:text-white transition">Learn More →</a>
+        </div>
+
+        <div class="lg:w-7/12 w-full">
+            <div class="win">
+                <div class="win-bar">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                    <span class="win-bar-title">~/</span>
+                </div>
+                <div id="orion-terminal" class="term-body" style="height: 340px; overflow-y: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-rule" />
+
+<section id="sift" class="bg-black py-20 px-6 md:px-10">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-start gap-12 lg:gap-16">
+
+        <div class="lg:w-5/12">
+            <p class="pt-mono text-xs text-yellow-400 uppercase tracking-widest mb-4">Real-time certificate transparency monitoring</p>
+            <h2 class="didot text-3xl md:text-4xl font-normal mb-5 leading-snug">Sift</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                Sift monitors over 24 certificate transparency log providers in real-time, creating keyword-based alerts to surface abuse-related domains before they go live. Every SSL certificate issued leaves a public record - Sift watches all of them.
+            </p>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                An optional <span class="text-gray-200 pt-mono text-xs">DGA</span> module identifies algorithmically generated domains - a common evasion technique used by malicious actors. Created from the ground up using a proprietary neural network trained on millions of known DGA domains.
+            </p>
+            <a href="#contact" class="pt-mono text-sm border border-gray-600 text-gray-300 px-5 py-2.5 rounded-md hover:border-white hover:text-white transition">Learn More →</a>
+        </div>
+
+        <div class="lg:w-7/12 w-full">
+            <div class="win">
+                <div class="win-bar">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                    <span class="win-bar-title">~/</span>
+                </div>
+                <div id="sift-terminal" class="term-body" style="height: 300px; overflow-y: auto;">
+                    <div class="text-green-400">$ sift --monitor --providers all</div>
+                    <div class="text-gray-300">[*] Starting certificate transparency monitor...</div>
+                    <div class="text-gray-300">[*] Connected to lets_encrypt_2026h1</div>
+                    <div class="text-gray-300">[*] Connected to google_argon2026h1</div>
+                    <div class="text-gray-300">[*] Connected to cloudflare_nimbus2026</div>
+                    <div class="text-gray-300">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-rule" />
+
 <section id="dashboard" class="bg-black py-20 px-6 md:px-10">
     <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
 
@@ -524,7 +521,7 @@
     </div>
 </section>
 
-<section class="bg-black py-20 px-6 md:px-10">
+<section class="bg-gray-950 py-20 px-6 md:px-10">
     <div class="max-w-3xl mx-auto text-center">
         <p class="pt-mono text-xs text-gray-500 uppercase tracking-widest mb-3">Free &amp; Open Source</p>
         <p class="text-gray-300 text-base leading-relaxed">
